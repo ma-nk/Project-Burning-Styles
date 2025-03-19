@@ -4,6 +4,9 @@
   | default @import url()
   |============================
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
