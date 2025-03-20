@@ -1,1 +1,141 @@
 /* section css will be here */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 20px 128px;
+  height: 84px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-part1 {
+  color: #4dc274;
+}
+
+.logo-part2 {
+  color: #121417;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #121417;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 2px;
+  background-color: #4dc274;
+  position: absolute;
+  bottom: -5px;
+  left: 0; /* Align to the left */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-links li a:hover::after {
+  opacity: 1;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+.socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.socials-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--black);
+  transition: fill 0.3s;
+}
+
+.socials-item:hover .socials-icon {
+  fill: #4dc274;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
