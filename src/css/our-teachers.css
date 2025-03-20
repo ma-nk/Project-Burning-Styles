@@ -1,12 +1,13 @@
 .teachers_section {
   margin-bottom: 80px;
   font-family: 'Manrope', sans-serif;
+  padding: 0 20px;
 }
 .teachers_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 335px;
+  max-width: 335px;
   margin: 0 auto;
 }
 
@@ -17,6 +18,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 16px;
+  color: #121417;
 }
 
 .teachers_title-span {
@@ -68,6 +70,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 8px;
+  color: #121417;
 }
 
 .teachers_teacher-description {
@@ -78,3 +81,57 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
+@media screen and (min-width: 768px) {
+  .teachers_title {
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+  }
+  .teachers_title-underline {
+    height: 20px;
+  }
+  .teachers_description {
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 64px;
+  }
+  .teachers_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .teachers_teacher-description {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .teachers_section {
+    padding: 0 32px;
+    margin-bottom: 100px;
+  }
+  .teachers_container {
+    max-width: 704px;
+  }
+  .teachers_item {
+    width: 272px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .teachers_section {
+    padding: 0 128px;
+    margin-bottom: 150px;
+  }
+  .teachers_container {
+    min-width: 1024px;
+  }
+  .teachers_description {
+    max-width: 709px;
+  }
+  .teachers_item {
+    width: 232px;
+  }
+}
