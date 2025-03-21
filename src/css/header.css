@@ -1,10 +1,9 @@
-/* section css will be here */
+/* Base Header Styles */
 .header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  padding: 20px 128px;
-  height: 84px;
+  padding: 20px 0;
   width: 100%;
   z-index: 1000;
 }
@@ -62,7 +61,7 @@
   background-color: #4dc274;
   position: absolute;
   bottom: -5px;
-  left: 0; /* Align to the left */
+  left: 0;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -99,7 +98,7 @@
 .socials-icon {
   width: 24px;
   height: 24px;
-  fill: var(--black);
+  fill: #121417; /* Default color for social icons */
   transition: fill 0.3s;
 }
 
@@ -107,35 +106,274 @@
   fill: #4dc274;
 }
 
+/* Hamburger Menu Button */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
-.hamburger {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  position: relative;
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+  fill: #121417; /* Match the color of the logo text */
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  width: 25px;
-  height: 3px;
-  background-color: #333;
+/* Close Button for Mobile Menu */
+.menu-close {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 0;
+    right: -64%;
+    height: 100%;
+    max-height: 100vh;
+    width: 64%;
+    background-color: #4dc274;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .header-nav.active {
+    right: 0;
+  }
+
+  .menu-close {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .nav-links li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .nav-links li a::after {
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+
+  .nav-links li a:hover::after {
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .desktop-social-links {
+    display: none;
+  }
+
+  .mobile-social-links {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .mobile-social-links .socials-icon {
+    fill: #fff;
+  }
+
+  .mobile-social-links .socials-item {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mobile-social-links .socials-item:hover .socials-icon {
+    fill: #121417;
+  }
+}
+
+/* Tablet Styles (768px to 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu on tablets */
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 0;
+    right: -50%; /* Start off-screen, matching the 50% width */
+    height: 100%; /* Fixed height as per requirement */
+    max-height: 100vh; /* Ensure it doesn’t exceed viewport height */
+    width: 50%; /* Take up 50% of the screen width */
+    background-color: #4dc274; /* Green background */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .header-nav.active {
+    right: 0; /* Slide in to the right edge */
+  }
+
+  .menu-close {
+    display: block; /* Show close button */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Vertical layout */
+    gap: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .nav-links li a {
+    color: #fff; /* White text for contrast */
+    font-size: 18px; /* Larger text for tablet menu */
+    font-weight: 600;
+  }
+
+  .nav-links li a::after {
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+
+  .nav-links li a:hover::after {
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .desktop-social-links {
+    display: none; /* Hide desktop social links on tablet */
+  }
+
+  .mobile-social-links {
+    display: flex; /* Show mobile social links in the menu */
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .mobile-social-links .socials-icon {
+    fill: #fff;
+  }
+
+  .mobile-social-links .socials-item {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mobile-social-links .socials-item:hover .socials-icon {
+    fill: #121417;
+  }
+}
+
+/* Desktop Styles (1280px and above) */
+@media (min-width: 1280px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide hamburger menu on desktop */
+  }
+
+  .header-nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    flex-direction: row;
+    box-shadow: none;
+    padding-top: 0;
+  }
+
+  .menu-close {
+    display: none; /* Hide close button on desktop */
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 0;
+  }
+
+  .nav-links li a {
+    color: #121417;
+    font-size: 14px;
+  }
+
+  .mobile-social-links {
+    display: none; /* Hide mobile social links on desktop */
+  }
+
+  .desktop-social-links {
+    display: flex;
+    margin-top: 0;
+    gap: 8px;
+  }
+}
+
+/* Overlay Styles (Updated for Tablet) */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
-.hamburger::before {
-  top: -8px;
+.header-nav.active ~ .menu-overlay {
+  display: block;
 }
 
-.hamburger::after {
-  top: 8px;
+/* Hide overlay on desktop */
+@media (min-width: 1280px) {
+  .menu-overlay {
+    display: none;
+  }
 }
