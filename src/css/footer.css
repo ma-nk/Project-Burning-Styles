@@ -1,1 +1,113 @@
 /* section css will be here */
+.footer {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.29;
+    padding: 64px 128px 23px 128px;
+    background-color: #121417;
+}
+
+.container {}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding-bottom: 64px;
+}
+
+.footer-top-left {
+    margin-right: auto;
+}
+
+.footer-logo {
+    color: #FFF;
+    font-size: 20px;
+    line-height: normal;
+
+    margin-bottom: 32px;
+}
+
+.accent {
+    color: #4DC274;
+}
+
+.footer-address {
+    color: inherit;
+}
+
+.footer-contacts {}
+
+.footer-contacts-item {}
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer-contacts-text {
+    color: rgba(255, 255, 255, 0.60);
+    font-style: normal;
+    letter-spacing: -0.28px;
+
+    margin-bottom: 4px;
+}
+
+.footer-contacts-link {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.footer-top-middle {
+
+}
+
+.footer-nav {
+   
+}
+
+.footer-nav-item {
+    
+}
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-nav-link {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.footer-top-right {}
+
+.footer-socials {}
+
+.socials-item {}
+
+.socials-link {}
+
+.socials-icon {}
+
+.footer-bottom {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 400;
+    letter-spacing: -0.28px;
+
+    padding-top: 23px;
+
+    display: flex;
+}
+
+.footer-bottom-left {
+    margin-right: auto;
+}
+
+.footer-bottom-right{
+    display: flex;
+    gap: 18px;
+}
+
+.footer-bottom-text {
+}
+
+.footer-bottom-link {
+    text-align: right;
+}
