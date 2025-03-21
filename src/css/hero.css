@@ -1,63 +1,141 @@
 /* section css will be here */
+html {
+    scroll-behavior: smooth;
+}
 
 .hero-section {
     display: flex;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .hero-container {
     display: flex;
     position: relative;
-    background: url(../img/hero/hero-bg.jpeg) center no-repeat;
+    background: 
+    linear-gradient(to right, rgba(0, 0, 0, 50%), rgba(0, 0, 0, 0%)),
+        url(../img/hero/hero-bg.jpeg) 75% 50% no-repeat;
     background-size: cover;
     border-radius: 30px;
-    padding: 64px;
-    height: 629px;
-    width: 1152px;
-    margin: 16px 64px 96px 64px;
+    padding: 72px 20px;
+    height: 709px;
+    width: 335px;
+    margin: 8px 0 80px;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     width: 564px;
 }
 
 .hero-h1 {
-    font-size: 60px;
+    font-size: 38px;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 40px;
 }
 
 .hero-button-apply {
     margin-top: 32px;
-    padding: 16px 64px;
-    width: fit-content;
+    text-align: center;
+    padding: 14px 64px;
     background-color: #4DC274;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 24px;
 }
 
 .hero-button-scroll {
     display: flex;
-    height: 48px;
-    width: 48px;
+    height: 38px;
+    width: 38px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    bottom: 32px;
-    right: 32px;
+    bottom: 14px;
+    right: 14px;
 }
 
 @media screen and (min-width: 768px) {
+    .hero-section {
+        padding: 0 32px;
+    }
+    .hero-container {
+        border-radius: 30px;
+        padding: 32px;
+        height: 657px;
+        width: 704px;
+        margin: 32px 32px 100px 32px;
+    }
     
+    .hero-content {
+        width: 564px;
+        justify-content: center;
+    }
+    
+    .hero-h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 70px;
+    }
+    
+    .hero-button-apply {
+        width: fit-content;
+        margin-top: 32px;
+        padding: 16px 64px;
+        border-radius: 12px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .hero-button-scroll {
+        height: 48px;
+        width: 48px;
+        bottom: 32px;
+        right: 32px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+    .hero-section {
+        padding: 0 20px;
+    }
 
+    .hero-container {
+        border-radius: 30px;
+        padding: 64px;
+        height: 629px;
+        width: 1152px;
+        margin: 16px 64px 96px 64px;
+    }
+    
+    .hero-content {
+        width: 564px;
+        justify-content: center;
+    }
+    
+    .hero-h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 70px;
+    }
+    
+    .hero-button-apply {
+        margin-top: 32px;
+        padding: 16px 64px;
+        border-radius: 12px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .hero-button-scroll {
+        height: 48px;
+        width: 48px;
+        bottom: 32px;
+        right: 32px;
+    }
 }
