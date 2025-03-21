@@ -10,5 +10,24 @@
     <symbol id="youtube" viewBox="0 0 32 32">
       <path d="M24.24 6c-1.36-.08-4.16-.16-8.4-.16h-.56c-4.08 0-6.8.08-8.16.24-1.84.16-3.12.64-3.84 1.28-.64.56-1.12 1.6-1.28 2.96-.08.88-.16 2.72-.16 5.52v.4c0 2.64.08 4.48.24 5.36.24 1.28.64 2.24 1.44 2.8.8.64 2.16 1.04 4.08 1.2 1.36.08 4.16.16 8.4.16h.56c4.08 0 6.8-.08 8.16-.24 1.84-.16 3.12-.64 3.84-1.28.64-.56 1.12-1.6 1.28-2.96.08-.88.16-2.72.16-5.52v-.4c0-2.64-.08-4.48-.24-5.36-.24-1.28-.64-2.24-1.44-2.8-.8-.64-2.16-1.04-4.08-1.2zm-3.12 9.84-8.8 5.28V10.56l8.8 5.28z"/>
     </symbol>
+    <symbol id="burger-menu" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="6.36963" y1="8.87878" x2="30.5001" y2="8.87878" stroke="#121417" stroke-width="3" stroke-linecap="round"/>
+      <line x1="6.36963" y1="22.8182" x2="30.5001" y2="22.8182" stroke="#121417" stroke-width="3" stroke-linecap="round"/>
+      <line x1="14.0217" y1="15.8485" x2="30.5" y2="15.8485" stroke="#121417" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="burger-menu" viewBox="0 0 31 32">
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M6.177 8.61h23.399"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M6.177 22.127h23.399"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M13.597 15.368h15.979"></path>
+    </symbol>
+    <symbol id="close" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
+    </symbol>
+
+    <symbol id="close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 8L8 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8 8L24 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
   </defs>
 </svg>

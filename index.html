@@ -15,70 +15,83 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/Project-Burning-Styles/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Project-Burning-Styles/assets/index-DnrTKDnb.css">
+    <link rel="stylesheet" crossorigin href="/Project-Burning-Styles/assets/index-S34TzJMk.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
-      <!-- Логотип -->
+      <!-- Logo -->
       <a href="#home" class="logo" aria-label="English Excellence Home">
           <span class="logo-part1">english</span><span class="logo-part2">excellence.</span>
       </a>
 
-      <!-- Кнопка для відкриття меню на мобільних пристроях -->
+      <!-- Hamburger Menu Button for Mobile -->
       <button class="menu-toggle" aria-label="Toggle navigation menu">
-          <span class="hamburger"></span>
+          <svg class="hamburger-icon" width="24" height="24">
+              <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#burger-menu"></use>
+          </svg>
       </button>
 
-      <!-- Навігація -->
+      <!-- Navigation (Mobile Menu and Desktop Nav) -->
       <nav class="header-nav" aria-label="Main navigation">
+          <button class="menu-close" aria-label="Close navigation menu">
+              <svg class="close-icon" width="24" height="24">
+                  <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#close"></use>
+              </svg>
+          </button>
           <ul class="nav-links">
               <li><a href="#about">About us</a></li>
-              <li><a href="#lessons">Our courses</a></li> <!-- Змінюємо "Our lessons" на "Our courses" -->
+              <li><a href="#lessons">Our courses</a></li>
               <li><a href="#teachers">Teachers</a></li>
-              <li><a href="#reviews">Testimonials</a></li> <!-- Змінюємо "Reviews" на "Testimonials" -->
+              <li><a href="#reviews">Testimonials</a></li>
               <li><a href="#contact">Contact us</a></li>
+          </ul>
+          <!-- Social Links inside Mobile Menu -->
+          <ul class="social-links mobile-social-links">
+              <li class="socials-item">
+                  <a class="socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Link to Facebook">
+                      <svg class="socials-icon" width="24" height="24">
+                          <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#facebook"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class="socials-item">
+                  <a class="socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Link to Instagram">
+                      <svg class="socials-icon" width="24" height="24">
+                          <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#instagram"></use>
+                      </svg>
+                  </a>
+              </li>
+              <li class="socials-item">
+                  <a class="socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Link to YouTube">
+                      <svg class="socials-icon" width="24" height="24">
+                          <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#youtube"></use>
+                      </svg>
+                  </a>
+              </li>
           </ul>
       </nav>
 
-      <!-- Соціальні мережі -->
-      <ul class="social-links">
+      <!-- Social Links (Desktop/Tablet) -->
+      <ul class="social-links desktop-social-links">
           <li class="socials-item">
-              <a
-                  class="socials-link"
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to Facebook"
-              >
+              <a class="socials-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Link to Facebook">
                   <svg class="socials-icon" width="24" height="24">
-                      <use href="/Project-Burning-Styles/assets/icons-CbMQRENk.svg#facebook"></use>
+                      <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#facebook"></use>
                   </svg>
               </a>
           </li>
           <li class="socials-item">
-              <a
-                  class="socials-link"
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to Instagram"
-              >
+              <a class="socials-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Link to Instagram">
                   <svg class="socials-icon" width="24" height="24">
-                      <use href="/Project-Burning-Styles/assets/icons-CbMQRENk.svg#instagram"></use>
+                      <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#instagram"></use>
                   </svg>
               </a>
           </li>
           <li class="socials-item">
-              <a
-                  class="socials-link"
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to YouTube"
-              >
+              <a class="socials-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Link to YouTube">
                   <svg class="socials-icon" width="24" height="24">
-                      <use href="/Project-Burning-Styles/assets/icons-CbMQRENk.svg#youtube"></use>
+                      <use href="/Project-Burning-Styles/assets/icons-DNE9Lx3d.svg#youtube"></use>
                   </svg>
               </a>
           </li>
@@ -86,6 +99,30 @@
   </div>
 </header>
 
+<!-- JavaScript for Menu Toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menuClose = document.querySelector('.menu-close');
+      const headerNav = document.querySelector('.header-nav');
+
+      menuToggle.addEventListener('click', () => {
+          headerNav.classList.add('active');
+      });
+
+      menuClose.addEventListener('click', () => {
+          headerNav.classList.remove('active');
+      });
+
+      // Close the menu when a nav link is clicked
+      const navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+              headerNav.classList.remove('active');
+          });
+      });
+  });
+</script>
 
     <main>
       <!-- Loads the specified .html file -->
