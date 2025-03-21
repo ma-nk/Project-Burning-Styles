@@ -1,1 +1,219 @@
 /* section css will be here */
+
+.primary-btn {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+    
+    border: 1px solid #4DC274;
+    border-radius: 12px;
+    background: #4DC274;
+    
+    width: 100%;
+    padding: 16px 63px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-weight: 700;
+        line-height: 1.55;
+        padding: 16px 39px;
+    }
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+    border-color: rgba(255, 255, 255, 0.40);
+}
+
+.lessons-section {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    padding: 0 20px 80px;
+
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 150px;
+    }
+}
+
+.lessons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.lessons-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #121417;
+}
+
+.lessons-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+    margin-bottom: 40px !important;
+
+    @media only screen and (min-width: 768px) {
+        width: 665px;
+        font-size: 18px;
+    }
+}
+
+.lessons-cards {
+    display: grid;
+    place-self: center;
+    gap: 20px;
+    
+    grid-template-columns: 1fr;
+
+@media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+
+        .lesson-card:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+
+            .lesson-card:nth-child(3) {
+                grid-column: 0;
+                grid-row: 1;
+            }
+    }
+}
+
+.lesson-card {
+    max-width: 336px;
+    width: 100%;
+    padding: 40px 20px;
+
+    border-radius: 16px;
+    border: 1px solid #4DC274;
+    background: #FFF;
+    text-align: center;
+    min-height: 404px;
+
+    transition: background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @media only screen and (min-width: 768px) {
+        color: rgba(18, 20, 23, 0.50);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 32px 16px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        max-width: 320px;
+        padding: 32px;
+    }
+
+}
+
+.lesson-card:hover,
+.lesson-card:focus {
+    background-color: #4DC274;
+}
+
+.lesson-card:hover :is(h3, h4),
+.lesson-card:focus :is(h3, h4) {
+    color: rgba(255, 255, 255);
+}
+
+.lesson-card:hover :is(.primary-btn),
+.lesson-card:focus :is(.primary-btn) {
+    border-color: rgba(255, 255, 255, 0.40);
+}
+
+.lesson-card:hover .lesson-caption,
+.lesson-card:focus .lesson-caption {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.lesson-type {
+    color: #121417;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.lesson-price {
+    color: #121417;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @media only screen and (min-width: 768px) {
+         margin-bottom: 32px;
+    
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 16px;
+    
+    }
+}
+
+.lesson-caption {
+    color: rgba(18, 20, 23, 0.50);
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-bottom: 20px;
+
+    width: 295px;
+    height: 132px;
+
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @media only screen and (min-width: 768px) {
+      width: 304px; 
+      height: 132px;
+
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        width: 255px;
+        height: 148px;
+    }
+}
