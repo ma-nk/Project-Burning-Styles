@@ -1,1 +1,345 @@
-/* section css will be here */
+.application-container {
+  display: flex;
+  flex-direction: column; /* Stack header and content vertically */
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.application-header {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.application-image {
+  max-width: 80%;
+}
+
+.application-header h1 {
+  font-size: 24px;
+  color: #000; /* Title set to black */
+  margin-bottom: 10px;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+}
+
+.form-description {
+  color: #666;
+  margin-bottom: 20px;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* Wrapper for image and form sections */
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 20px; /* Add margin between description and image/form */
+  align-items: stretch; /* Ensure both sections have the same height */
+}
+/* Left Section (Image and Text) */
+.application-image-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  text-align: center;
+}
+.image-placeholder {
+  width: 100%;
+  max-height: 300px; /* Set a max height but allow flexibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow it to grow to match form height */
+}
+
+.placeholder-text {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Right Section (Form) */
+.application-form-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.application-form input,
+.application-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.application-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.teacher-selection {
+  margin-top: 10px;
+}
+
+.teacher-selection label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.application-form button {
+  background-color: #4DC274;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.application-form button:hover {
+  background-color: #218838;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.privacy-text a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.privacy-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .application-container {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    flex-direction: column; /* Stack image and form vertically on tablet */
+    margin-top: 15px; /* Reduced margin for tablet */
+  }
+
+  .application-image-section {
+    display: none; /* Hide image section on tablet */
+  }
+
+  .application-form-section {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .application-header {
+    padding: 20px 30px;
+  }
+
+  .application-header h1 {
+    font-size: 20px;
+  }
+
+  .form-description {
+    font-size: 13px;
+  }
+
+  .application-form input,
+  .application-form textarea {
+    font-size: 13px;
+  }
+
+  .application-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .privacy-text {
+    font-size: 11px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .application-form-section {
+    padding: 20px;
+  }
+
+  .application-header {
+    padding: 15px 20px;
+  }
+
+  .content-wrapper {
+    margin-top: 10px; /* Further reduced margin for mobile */
+  }
+
+  .application-header h1 {
+    font-size: 18px;
+  }
+
+  .form-description {
+    font-size: 12px;
+  }
+
+  .application-form input,
+  .application-form textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .application-form textarea {
+    height: 60px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .application-form button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .privacy-text {
+    font-size: 10px;
+  }
+}
+.application-header {
+  position: relative;
+  text-align: center;
+}
+
+.overlap-rectangle {
+  position: absolute;
+  top: 30%; /* Position it below the h1 element */
+  left: 59%;
+  transform: translateX(-50%);
+  width: 216px;
+  height: 20px;
+  border-radius: 8px;
+  background-color: #BEE8CC;
+  z-index: 1;
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .overlap-rectangle {
+    top: 27%;
+    left: 56%;
+    width: 108px;
+    height: 13px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .overlap-rectangle {
+    top: 22%;
+    left: 59%;
+    width: 98px;
+    height: 10px;
+  }
+}
+
+.application-title {
+  position: relative;
+  z-index: 2;
+}
+/* Style for radio buttons within the radio-group class */
+.radio-group input[type="radio"] {
+  accent-color: #4DC274;
+  border: none; /* Remove border */
+}
+
+/* Style for the checked radio button */
+.radio-group input[type="radio"]:checked {
+  border: none;
+  background-color: #4DC274; /* Ensure the dot is colored */
+}
+
+/* Style for the dot and circle between the dot */
+.radio-group input[type="radio"]:checked::before,
+.radio-group input[type="radio"]:checked::after {
+  background-color: #4DC274;
+}
+
+input[type='radio']:checked:before {
+  background:#4DC274;
+}
+
+input[type='radio'] {
+  border:1px solid #4DC274;
+  border-radius:50%;
+  outline:none;
+}
+
+/* Tablet (max-width: 768) */
+@media (max-width: 768px) {
+  .radio-group {
+    flex-direction: row; /* Change to row for mobile */
+    gap: 10px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .radio-group {
+    display: flex;
+    flex-direction: column; /* Ensure buttons are stacked vertically */
+    align-items: flex-start; /* Align buttons to the left */
+    gap: 10px;
+  }
+}
