@@ -14,7 +14,7 @@ html {
     position: relative;
     background: 
     linear-gradient(to right, rgba(0, 0, 0, 50%), rgba(0, 0, 0, 0%)),
-        url(../img/hero/hero-bg.jpeg) center no-repeat;
+        url(../img/hero/hero-bg.jpeg) 75% 50% no-repeat;
     background-size: cover;
     border-radius: 30px;
     padding: 72px 20px;
