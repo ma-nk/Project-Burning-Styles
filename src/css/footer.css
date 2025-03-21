@@ -32,7 +32,9 @@
     color: #4DC274;
 }
 
-.footer-address {}
+.footer-address {
+    color: inherit;
+}
 
 .footer-contacts {}
 
