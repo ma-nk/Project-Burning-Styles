@@ -1,1 +1,63 @@
 /* section css will be here */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    position: relative;
+    background: url(../img/hero/hero-bg.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 64px;
+    height: 629px;
+    width: 1152px;
+    margin: 16px 64px 96px 64px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 564px;
+}
+
+.hero-h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.hero-button-apply {
+    margin-top: 32px;
+    padding: 16px 64px;
+    width: fit-content;
+    background-color: #4DC274;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.hero-button-scroll {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+}
