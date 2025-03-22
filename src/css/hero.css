@@ -13,8 +13,8 @@ html {
 .hero-container {
     display: flex;
     position: relative;
-    background: 
-    linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%),
+    background:
+        linear-gradient(357.37deg, rgba(0, 0, 0, 0.4) 39.23%, rgba(0, 0, 0, 0) 66.28%),
         url(../img/hero/hero-bg.jpeg) 75% 50% no-repeat;
     background-size: cover;
     border-radius: 30px;
@@ -77,15 +77,19 @@ html {
         padding: 0 32px;
     }
     .hero-container {
+        background:
+            linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%),
+            url(../img/hero/hero-bg.jpeg) 41% 50% no-repeat;
+        background-size: cover;
         border-radius: 30px;
         padding: 32px;
-        height: 657px;
+        height: 857px;
         width: 704px;
         margin: 32px 32px 100px 32px;
     }
     
     .hero-content {
-        width: 564px;
+        width: 488px;
         justify-content: center;
     }
     
