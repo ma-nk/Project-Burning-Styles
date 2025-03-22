@@ -14,7 +14,7 @@ html {
     display: flex;
     position: relative;
     background: 
-    linear-gradient(to right, rgba(0, 0, 0, 50%), rgba(0, 0, 0, 0%)),
+    linear-gradient(95.97deg, rgba(0, 0, 0, 0.4) 36.36%, rgba(0, 0, 0, 0) 51.43%),
         url(../img/hero/hero-bg.jpeg) 75% 50% no-repeat;
     background-size: cover;
     border-radius: 30px;
