@@ -1,3 +1,6 @@
+.leave-an-application_section {
+  margin-bottom: 80px;
+}
 .application-container {
   display: flex;
   flex-direction: column; /* Stack header and content vertically */
@@ -19,28 +22,39 @@
   max-width: 80%;
 }
 
-.application-header h1 {
-  font-size: 24px;
-  color: #000; /* Title set to black */
-  margin-bottom: 10px;
-  font-family: Manrope;
+.application-title {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
   text-align: center;
+  color: #121417;
+  margin-bottom: 14px;
+}
 
+.leave-an-application_title-span {
+  display: inline-block;
+  position: relative;
+}
+
+.leave-an-application_title-span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  left: 0;
+  bottom: -1px;
+  background-color: #bee8cc;
+  border-radius: 8px;
+  z-index: -1;
 }
 
 .form-description {
-  color: #666;
-  margin-bottom: 20px;
-  font-family: Manrope;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  width: 319px;
+  font-size: 14px;
+  line-height: 171%;
   text-align: center;
-  width: 60%;
-  margin: 20px auto;
+  color: rgba(18, 20, 23, 0.8);
 }
 
 /* Wrapper for image and form sections */
@@ -110,6 +124,14 @@
   margin-top: 10px;
 }
 
+.teacher-selection_title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #121417;
+}
+
 .teacher-selection label {
   font-size: 14px;
   color: #333;
@@ -123,16 +145,39 @@
   flex-wrap: wrap;
 }
 
-.radio-group label {
-  font-size: 14px;
-  color: #333;
+.radio-input {
+  visibility: hidden;
+}
+
+.radio-custom-border {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #12141733;
+  border-radius: 50%;
+  transition: border-color 0.3s;
+}
+
+.radio-custom-center {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.radio-input:checked + .radio-label .radio-custom-border {
+  border-color: #4dc274;
+}
+
+.radio-input:checked + .radio-label .radio-custom-center {
+  background-color: #4dc274;
 }
 
 .application-form button {
-  background-color: #4DC274;
+  background-color: #4dc274;
   color: #fff;
   padding: 12px;
   border: none;
@@ -270,7 +315,7 @@
   width: 216px;
   height: 20px;
   border-radius: 8px;
-  background-color: #BEE8CC;
+  background-color: #bee8cc;
   z-index: 1;
 }
 
@@ -297,33 +342,6 @@
 .application-title {
   position: relative;
   z-index: 2;
-}
-/* Style for radio buttons within the radio-group class */
-.radio-group input[type="radio"] {
-  accent-color: #4DC274;
-  border: none; /* Remove border */
-}
-
-/* Style for the checked radio button */
-.radio-group input[type="radio"]:checked {
-  border: none;
-  background-color: #4DC274; /* Ensure the dot is colored */
-}
-
-/* Style for the dot and circle between the dot */
-.radio-group input[type="radio"]:checked::before,
-.radio-group input[type="radio"]:checked::after {
-  background-color: #4DC274;
-}
-
-input[type='radio']:checked:before {
-  background:#4DC274;
-}
-
-input[type='radio'] {
-  border:1px solid #4DC274;
-  border-radius:50%;
-  outline:none;
 }
 
 /* Tablet (max-width: 768) */

@@ -26,7 +26,8 @@
   position: relative;
 }
 
-.teachers_title-underline {
+.teachers_title-span::after {
+  content: '';
   position: absolute;
   width: 100%;
   height: 12px;
