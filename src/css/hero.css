@@ -1,6 +1,7 @@
 /* section css will be here */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 .hero-section {
