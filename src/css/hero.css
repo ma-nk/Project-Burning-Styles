@@ -36,6 +36,10 @@ html {
     line-height: 40px;
 }
 
+.hero-green-text {
+    color: #BEE8CC;
+}
+
 .hero-button-apply {
     margin-top: 32px;
     text-align: center;
@@ -45,6 +49,13 @@ html {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
+}
+
+.hero-button-apply:hover {
+    background-color: #38AE5F;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
 }
 
 .hero-button-scroll {

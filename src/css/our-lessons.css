@@ -18,7 +18,7 @@
         line-height: 1.5;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         font-weight: 700;
         line-height: 1.55;
         padding: 16px 39px;
@@ -39,7 +39,7 @@
         padding-bottom: 100px;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         padding-bottom: 150px;
     }
 }
@@ -93,7 +93,7 @@
         }
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         grid-template-columns: repeat(3, 1fr);
 
             .lesson-card:nth-child(3) {
@@ -125,7 +125,7 @@
         padding: 32px 16px;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         max-width: 320px;
         padding: 32px;
     }
@@ -182,7 +182,7 @@
     
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         margin-bottom: 16px;
     
     }
@@ -212,7 +212,7 @@
       margin-bottom: 32px;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1280px) {
         width: 255px;
         height: 148px;
     }
