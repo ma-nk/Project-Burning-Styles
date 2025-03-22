@@ -13,6 +13,20 @@ body {
   padding-bottom: 80px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding-bottom: 100px;
@@ -78,7 +92,7 @@ body {
   width: 100%;
   height: 12px;
   border-radius: 8px;
-  background-color: #BEE8CC;
+  background-color: #bee8cc;
 }
 
 @media screen and (min-width: 768px) {
