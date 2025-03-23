@@ -1,7 +1,8 @@
 .footer {
     font-size: 14px;
     line-height: 1.29;
-    padding: 64px 20px 23px;
+    /* padding: 64px 20px 23px; */
+    padding: 0;
     background-color: #121417;
     margin: 0 auto;
 }
@@ -20,6 +21,12 @@
     color: #FFF;
     font-size: 20px;
     margin-bottom: 32px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    opacity: 0.8;
 }
 
 .accent {
@@ -40,6 +47,12 @@
 
 .footer-contacts-link {
     font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: #4dc274;
 }
 
 .footer-nav-item:not(:last-child) {
@@ -48,6 +61,12 @@
 
 .footer-nav-link {
     font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: #4dc274;
 }
 
 .footer-top-right {
@@ -67,6 +86,15 @@
     border-radius: 10px;
     width: 40px;
     height: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.socials-item:hover,
+.socials-item:focus {
+    fill: #4dc274;
+    border-color: rgba(77, 194, 116, 0.10);
+    transform: translateY(-2px);
 }
 
 .socials-icon {
@@ -74,11 +102,6 @@
     height: 24px;
     fill: #FFF;
     transition: fill 0.3s;
-}
-
-.socials-item:hover {
-    fill: #4dc274;
-    border-color: rgba(77, 194, 116, 0.10);
 }
 
 .footer-bottom {
@@ -104,10 +127,22 @@
 
 /* Адаптація під екрани */
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
+    
+    .footer-container{
+        padding-top: 64px;
+        padding-bottom: 23px;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
     .footer-top {
         flex-wrap: nowrap;
         padding-bottom: 64px;
+    }
+
+    .footer-top-right {
+        padding-top: 4px;
     }
 
     .footer-bottom {
@@ -115,7 +150,31 @@
     }
 }
 
-@media (max-width: 375px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    .footer-container {
+        padding: 32px 32px 16px 32px;
+    }
+    .footer-top {
+        flex-wrap: nowrap;
+        padding-bottom: 110px;
+    }
+
+    .footer-top-right {
+        padding-top: 4px;
+    }
+
+    .footer-bottom {
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer-container {
+        padding: 40px 20px 20px 20px ;
+    }
+
     .footer-top {
         flex-direction: column;
         align-items: flex-start;
