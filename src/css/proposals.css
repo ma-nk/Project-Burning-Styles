@@ -168,7 +168,7 @@
     width: 100%;
   }
   
-  @media screen and (min-width: 767px) and (max-width: 1281px) {
+  @media (min-width: 1281px) {
     ul li:nth-child(2) {
       width: 540px;
     }
