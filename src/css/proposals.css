@@ -5,15 +5,12 @@
     border-radius: 30px;
     background: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
     position: relative;
-    width: 1152px;
     height: 950px;
     justify-content: center;
-    margin-left:184px ;
-    margin-right: 184px;
     margin-bottom: 80px;
   }
   
-  .Proposal-to-leave-an-application .container {
+  .Proposal-to-leave-an-application .container43 {
     color: #121417;
   }
   
@@ -162,14 +159,22 @@
     height: 20px;
     fill: #4DC274;
   }
+
+
+
+  .center123{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   
-  @media screen and (min-width: 769px) and (max-width: 1281px) {
+  @media screen and (min-width: 767px) and (max-width: 1281px) {
     ul li:nth-child(2) {
       width: 540px;
     }
   }
   
-  @media (max-width: 376px) {
+  @media (max-width: 766px) {
     .Proposal-to-leave-an-application {
       width: 335px;
       height: 737px;
@@ -258,7 +263,7 @@
   }
   
   
-  @media screen and (min-width: 376px) and (max-width: 768px) {
+  @media screen and (min-width: 767px) and (max-width: 1281px) {
     .Proposal-to-leave-an-application {
       width: 704px;
       margin-left: 21px;
@@ -336,6 +341,5 @@
     }
   }
   
-  
-  
+
   
