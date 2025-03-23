@@ -1,113 +1,192 @@
-/* section css will be here */
 .footer {
     font-size: 14px;
-    font-style: normal;
     line-height: 1.29;
-    padding: 64px 128px 23px 128px;
+    /* padding: 64px 20px 23px; */
+    padding: 0;
     background-color: #121417;
+    margin: 0 auto;
 }
-
-.container {}
 
 .footer-top {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    padding-bottom: 64px;
-}
-
-.footer-top-left {
-    margin-right: auto;
+    padding-bottom: 40px;
+    gap: 40px;
 }
 
 .footer-logo {
     color: #FFF;
     font-size: 20px;
-    line-height: normal;
-
     margin-bottom: 32px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    opacity: 0.8;
 }
 
 .accent {
     color: #4DC274;
 }
 
-.footer-address {
-    color: inherit;
+.footer-contacts {
+    font-style: normal;
 }
-
-.footer-contacts {}
-
-.footer-contacts-item {}
 .footer-contacts-item:not(:last-child) {
     margin-bottom: 16px;
 }
 
 .footer-contacts-text {
     color: rgba(255, 255, 255, 0.60);
-    font-style: normal;
-    letter-spacing: -0.28px;
-
     margin-bottom: 4px;
 }
 
 .footer-contacts-link {
-    font-style: normal;
     font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-top-middle {
-
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: #4dc274;
 }
 
-.footer-nav {
-   
-}
-
-.footer-nav-item {
-    
-}
 .footer-nav-item:not(:last-child) {
     margin-bottom: 20px;
 }
 
 .footer-nav-link {
-    font-style: normal;
     font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-top-right {}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: #4dc274;
+}
 
-.footer-socials {}
+.footer-top-right {
+    margin-top: 8px;
+}
 
-.socials-item {}
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
 
-.socials-link {}
+.socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
 
-.socials-icon {}
+.socials-item:hover,
+.socials-item:focus {
+    fill: #4dc274;
+    border-color: rgba(77, 194, 116, 0.10);
+    transform: translateY(-2px);
+}
+
+.socials-icon {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+    transition: fill 0.3s;
+}
 
 .footer-bottom {
     color: rgba(255, 255, 255, 0.60);
     font-weight: 400;
     letter-spacing: -0.28px;
-
     padding-top: 23px;
-
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .footer-bottom-left {
     margin-right: auto;
 }
 
-.footer-bottom-right{
+.footer-bottom-right {
     display: flex;
+    flex-wrap: wrap;
     gap: 18px;
 }
 
-.footer-bottom-text {
+/* Адаптація під екрани */
+
+@media (min-width: 1280px) {
+    
+    .footer-container{
+        padding-top: 64px;
+        padding-bottom: 23px;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    .footer-top {
+        flex-wrap: nowrap;
+        padding-bottom: 64px;
+    }
+
+    .footer-top-right {
+        padding-top: 4px;
+    }
+
+    .footer-bottom {
+        flex-wrap: nowrap;
+    }
 }
 
-.footer-bottom-link {
-    text-align: right;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    .footer-container {
+        padding: 32px 32px 16px 32px;
+    }
+    .footer-top {
+        flex-wrap: nowrap;
+        padding-bottom: 110px;
+    }
+
+    .footer-top-right {
+        padding-top: 4px;
+    }
+
+    .footer-bottom {
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer-container {
+        padding: 40px 20px 20px 20px ;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-bottom-right {
+        align-items: flex-start;
+        gap: 18px;
+    }
 }
