@@ -178,7 +178,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-content: center; /* Centers the grid within the container */
-    padding: revert;
     margin: revert;
   }
 

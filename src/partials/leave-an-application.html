@@ -1,62 +1,121 @@
-<div class="application-container" id="contact">
-  <!-- Title and Description (Moved to Top) -->
-  <div class="application-header">
-    <div class="overlap-rectangle"></div>
-    <h1 class="application-title">Leave an application</h1>
-    <p class="form-description">
+<section class="application_section">
+  <div class="application_container" id="application">
+    <h2 class="application_title">
+      Leave an
+      <span class="application_title-span">application</span>
+    </h2>
+    <p class="application_description">
       Please use the form below to contact us. Enter your name, email, and
-      message and we’ll get back to you shortly.
+      message and we'll get back to you shortly.
     </p>
-  </div>
 
-  <!-- Main Content (Image and Form) -->
-  <div class="content-wrapper">
-    <!-- Left Section (Image Placeholder and Text) -->
-    <div class="application-image-section">
-      <div class="image-placeholder">
-        <div class="placeholder-text">
-          <img
-            class="application-image"
-            src="./img/leave-an-application.png"
-            alt="Leave an application"
-          />
-        </div>
+    <div class="application_form-wrapper">
+      <div class="application_image-wrapper">
+        <img
+          src="./img/leave-an-application/girl.png"
+          class="application_image"
+          alt="Leave an application"
+          width="597"
+        />
+        <p class="application_image-number">1000</p>
+        <p class="application_image-text">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
       </div>
-    </div>
 
-    <!-- Right Section (Form) -->
-    <div class="application-form-section">
-      <form class="application-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Phone" />
-        <textarea placeholder="Comment"></textarea>
-        <div class="teacher-selection">
-          <label>Choose a teacher</label>
-          <div class="radio-group">
-            <label
-              ><input type="radio" name="teacher" value="Maria" checked />
-              Maria</label
-            >
-            <label
-              ><input type="radio" name="teacher" value="Artem" /> Artem</label
-            >
-            <label
-              ><input type="radio" name="teacher" value="Ilona" /> Ilona</label
-            >
-            <label
-              ><input type="radio" name="teacher" value="Volodymyr" />
-              Volodymyr</label
-            >
-          </div>
-        </div>
-        <button type="submit">Send</button>
+      <form class="application_form">
+        <input
+          class="application_form-input"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="application_form-input"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <input class="application_form-input" type="tel" placeholder="Phone" />
+        <textarea
+          class="application_form-textarea"
+          placeholder="Comment"
+        ></textarea>
+        <h3 class="application_radio-title">Choose a teacher</h3>
+        <ul class="application_radio-list">
+          <li class="application_radio-item">
+            <input
+              class="application_radio-input visually-hidden"
+              type="radio"
+              name="teacher"
+              value="Maria"
+              id="maria-radio"
+              checked
+            />
+            <label class="application_radio-label" for="maria-radio">
+              <div class="custom-radio_border">
+                <div class="custom-radio_center"></div>
+              </div>
+              <p class="application_radio-para">Maria</p>
+            </label>
+          </li>
+          <li class="application_radio-item">
+            <input
+              class="application_radio-input visually-hidden"
+              type="radio"
+              name="teacher"
+              value="Artem"
+              id="artem-radio"
+            />
+            <label class="application_radio-label" for="artem-radio">
+              <div class="custom-radio_border">
+                <div class="custom-radio_center"></div>
+              </div>
+
+              <p class="application_radio-para">Artem</p>
+            </label>
+          </li>
+          <li class="application_radio-item">
+            <input
+              class="application_radio-input visually-hidden"
+              type="radio"
+              name="teacher"
+              value="Ilona"
+              id="ilona-radio"
+            />
+            <label class="application_radio-label" for="ilona-radio">
+              <div class="custom-radio_border">
+                <div class="custom-radio_center"></div>
+              </div>
+              <p class="application_radio-para">Ilona</p>
+            </label>
+          </li>
+          <li class="application_radio-item">
+            <input
+              class="application_radio-input visually-hidden"
+              type="radio"
+              name="teacher"
+              value="Volodymyr"
+              id="volodymyr-radio"
+            />
+            <label class="application_radio-label" for="volodymyr-radio">
+              <div class="custom-radio_border">
+                <div class="custom-radio_center"></div>
+              </div>
+              Volodymyr
+            </label>
+          </li>
+        </ul>
+
+        <button class="application_form-button" type="submit">Send</button>
+        <p class="application_privacy-text">
+          By clicking on “Send” button, you agree to our
+          <a class="application_privacy-link" href="#">Privacy Policy</a>, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
       </form>
-      <p class="privacy-text">
-        By clicking on “Send” button, you agree to our
-        <a href="#">Privacy Policy</a>, and allow Promodo to use this
-        information for marketing purposes.
-      </p>
     </div>
   </div>
-</div>
+</section>

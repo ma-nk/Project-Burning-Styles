@@ -26,7 +26,8 @@
   position: relative;
 }
 
-.teachers_title-underline {
+.teachers_title-span::after {
+  content: '';
   position: absolute;
   width: 100%;
   height: 12px;
@@ -87,7 +88,7 @@
     line-height: 120%;
     letter-spacing: -0.02em;
   }
-  .teachers_title-underline {
+  .teachers_title-span::after {
     height: 20px;
   }
   .teachers_description {
