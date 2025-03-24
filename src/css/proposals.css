@@ -90,7 +90,7 @@
   margin: 0px 64px;
 }
 
-.Proposal-to-leave-an-application .list-item {
+.Proposal-to-leave-an-application .proposal_list-item {
   margin-bottom: 18px;
   font-weight: 700;
   display: flex;
@@ -182,8 +182,9 @@
     margin-bottom: 80px;
   }
 
-  .Proposal-to-leave-an-application .list-item {
+  .Proposal-to-leave-an-application .proposal_list-item {
     margin-bottom: 16px;
+
   }
 
   .Proposal-to-leave-an-application .title {
@@ -255,9 +256,12 @@
     margin-right: 8px;
   }
 
+
+
   .social-icon {
     scale: 0.7;
   }
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 1281px) {
@@ -299,7 +303,7 @@
     margin: 31px 20px 63px 31px;
   }
 
-  .Proposal-to-leave-an-application .list-item {
+  .Proposal-to-leave-an-application .proposal_list-item {
     margin-bottom: 16px;
   }
 
@@ -336,3 +340,4 @@
     top: 310px;
   }
 }
+
