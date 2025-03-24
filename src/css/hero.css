@@ -85,7 +85,7 @@ html {
         padding: 32px;
         height: 857px;
         width: 704px;
-        margin: 32px 32px 100px 32px;
+        margin: 32px 0 100px;
     }
     
     .hero-content {
@@ -126,7 +126,7 @@ html {
         padding: 64px;
         height: 629px;
         width: 1152px;
-        margin: 16px 64px 96px 64px;
+        margin: 16px 0 96px;
     }
     
     .hero-content {
